@@ -1,69 +1,47 @@
 body {
  width: 100vw;
  margin: 0 auto;
- font-family: Tahoma, Verdana, Arial, sans-serif;
- background: linear-gradient(10deg, #694f88, #557349, #636d96, #616b60);
- -webkit-animation: bodybg 30s ease infinite;
- -moz-animation: bodybg 30s ease infinite;
- -o-animation: bodybg 30s ease infinite;
- animation: bodybg 30s ease infinite;
+ color: #b9b7c7;
+}
+.mainContent {
  height: 100vh;
+ overflow: scroll;
+ padding-top: 50px;
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+.defaultBgColor {
+ background: linear-gradient(10deg, #694f88, #494e47, #636d96, #616b60);
  background-size: auto;
  background-repeat: no-repeat;
- overflow: scroll;
- color: #b9b7c7;
- height: 100vh;
-}
-@-webkit-keyframes bodybg {
- 0%{background-position:62% 0%}
- 50%{background-position:39% 100%}
- 100%{background-position:62% 0%}
-}
-@-moz-keyframes bodybg {
- 0%{background-position:62% 0%}
- 50%{background-position:39% 100%}
- 100%{background-position:62% 0%}
-}
-@-o-keyframes bodybg {
- 0%{background-position:62% 0%}
- 50%{background-position:39% 100%}
- 100%{background-position:62% 0%}
-}
-@keyframes bodybg {
- 0%{background-position:62% 0%}
- 50%{background-position:39% 100%}
- 100%{background-position:62% 0%}
-}
-.default-title {
- -webkit-animation-name: thumb;
- -webkit-animation-duration: 3000ms;
- -webkit-transform-origin:50% 50%;
- -webkit-animation-iteration-count:infinite;
- -webkit-animation-timing-function: linear;
- font-size: 38px;
- color: #c5c1ce;
- text-align: center;
- display: block;
- margin-top: 34vh;
-}
-@-webkit-keyframes thumb {
- 0% { -webkit-transform: scale(0.25); }
- 50% { -webkit-transform: scale(0.50); }
- 100% { -webkit-transform: scale(0.75); }
-}
-.navbar {
-  opacity: 0.6;
-  font-weight: 600;
-  font-size: 13px;
-}
-.main-content {
-  overflow:hidden;
+ height:100vh;
 }
 .footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
+  text-align: right;
   display: inline-block;
   float: right;
   width: 100%;
+}
+.homeContainer {
+  background-image: url(../images/homebg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+  width:100vw;
+  display:table;
+}
+.active {
+  background-color: white  !important;
+  background-image: none !important;
+  font-weight: 600;
+}
+.homeContent {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.nameTitle {
+  font-family: 'Sofia';
 }
