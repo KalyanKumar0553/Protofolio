@@ -12,7 +12,7 @@ app.config(function($routeProvider) {
   });
 });
 app.controller('homeCtrl', function($scope) {
-    $scope.roles = ["a Java professional" , "a Angular Developer"]
+    $scope.roles = ["An SSE at Oracle","a Java professional" , "an Angular Developer","Full Stack Developer","an AWS Practitioner","a Mentor"]
     $scope.currRole = "";
     $scope.duration = 100;
     $scope.currIndex = 0;
@@ -43,7 +43,7 @@ app.controller('homeCtrl', function($scope) {
         if($("#typer").length>0) {
           $("#typer")[0].innerText = $scope.displayRole;
         }
-        setTimeout($scope.displayText, 200);
+        setTimeout($scope.displayText, 100);
       } else {
         $scope.clearText();
       }
@@ -56,7 +56,7 @@ app.controller('homeCtrl', function($scope) {
         if($("#typer").length>0) {
           $("#typer")[0].innerText = $scope.displayRole;
         }
-        setTimeout($scope.clearText, 200);
+        setTimeout($scope.clearText, 100);
       } else {
         $scope.showText();
       }
