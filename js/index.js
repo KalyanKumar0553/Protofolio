@@ -4,6 +4,9 @@ app.config(function($routeProvider) {
   .when("/", {
     templateUrl : "templates/home.html"
   })
+  .when("/about", {
+    templateUrl : "templates/about.html"
+  })
   .otherwise({
     templateUrl : "templates/loading.html"
   });
@@ -59,4 +62,14 @@ app.controller('homeCtrl', function($scope) {
       }
     }
     $scope.showText();
+    $scope.showFooter = ()=> {
+      $(".footer").show();
+    }
+    $scope.activateAbout = ()=> {
+      $(".footer").hide();
+      $scope.activeTab('abouttab');
+    }
+    $scope.scrollToTech = ()=>{
+      $("#techSctn")[0].scrollIntoView();
+    }
 });
