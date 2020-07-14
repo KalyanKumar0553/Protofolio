@@ -31,17 +31,14 @@ body {
   height: 100vh;
   width:100vw;
   display:table;
+  background: whitesmoke;
 }
 .imgContainer {
   background-size: cover;
-  background-position: 50%;
+  background-position: 55%;
 }
 .homeContainer {
   background-image: url(../images/homebg.jpg);
-}
-.aboutContainer {
-  background-image: url(../images/homebg.jpg);
-  z-index: 10001;
 }
 .active {
   background-color: white  !important;
@@ -52,24 +49,44 @@ body {
   display:table-cell;
   vertical-align:middle;
   text-align:center;
+  color: #8c5e7b;
 }
 .nameTitle {
   font-family: 'Sofia';
 }
+svg:not(:root) {
+  overflow:visible;
+  z-index: 1000;
+}
 .arrow-down-svg {
   position: absolute;
   bottom: 0;
-  stroke-width: 4;
-  stroke: #fff;
-  fill: #fff;
+  stroke-width: 8%;
+  stroke: #8b0046;
+  fill: #8b0046;
 }
 .bounce-down {
   position: absolute;
   bottom: 10vh;
   left: 17vw;
-  color: #fff;
+  color: #8b0046;
+  -webkit-animation: bounce 3s infinite;
+  animation:  bounce 3s infinite;;
+  z-index: 10000;
+}
+.wavetext {
+  display: inline-block;
   -webkit-animation: bounce 2s infinite;
-  animation:  bounce 2s infinite;;
+  animation:  bounce 5s infinite;
+  animation-delay: calc(0.1s * var(--i));
+  -webkit-box-reflect: below 11px linear-gradient(transparent,rgb(0,0,0,0.2));
+  font-family: muli;
+  font-weight: 600;
+  font-size: 43px;
+  padding-right: 1%;
+  opacity: 0.5;
+  color: #8b0046;
+  animation-delay: calc(0.1s * var(--i));
 }
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
