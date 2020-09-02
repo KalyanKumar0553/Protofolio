@@ -69,6 +69,8 @@ app.controller('homeCtrl', function($scope) {
       $(".footer").hide();
       $scope.activeTab('abouttab');
     }
+    $scope.subjects = ["java","spring","kafka","mysql","javascript","node-js","angular","css","typescript","jenkins","github","aws","docker","k8s"];
+    $scope.companies = ["capgemini","hcl"];
     $scope.scrollToTech = ()=>{
       $("#techSctn")[0].scrollIntoView();
     }

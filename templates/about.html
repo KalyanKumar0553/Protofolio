@@ -15,5 +15,37 @@
     </div>
     <i ng-click="scrollToTech()" class="fa fa-chevron-down fa-4x bounce-down" data-scroll-nav="1">&nbsp;</i>
 </div>
-<div id="techSctn" class="sectionContainer defaultBgColor">
+<div class="techContainer defaultBgColor">
+    <div id="techSctn" class="sectionContent">
+        <h1 class="title center default-color">Technologies</h1>
+        <h4 class="content center default-color">
+            I have worked with a wide variety of programming languages. Here are a few frameworks I've worked with recently
+        </h4>
+        <div class="row">
+            <div class="col-xs-3 col-md-2 col-lg-2" ng-repeat="x in subjects">
+                <img class="subjectImg" ng-src="images/subjects/{{x}}.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12 center-text header-bg">
+                <h2>Companies I have worked with</h2>
+            </div>
+        </div>
+        <div class="row clientBG">
+            <div class="col-xs-0 col-md-1 col-lg-1">
+            </div>
+            <div class="col-xs-0 col-md-2 col-lg-2 center">
+                <img class="glenwoodImg" style="height:auto;margin-top:23px;" src="images/clients/cts.png"/>
+            </div>
+            <div class="col-xs-0 col-md-2 col-lg-2 center">
+                <img class="glenwoodImg" src="images/clients/oracle.png"/>
+            </div>
+            <div class="col-xs-0 col-md-2 col-lg-2 center">
+                <img class="glenwoodImg" src="images/clients/glenwood.png"/>
+            </div>
+            <div class="col-xs-0 col-md-2 col-lg-2" ng-repeat="x in companies">
+                <img class="clientImg" ng-src="images/clients/{{x}}.png"/>
+            </div>
+        </div>
+    </div>
 </div>

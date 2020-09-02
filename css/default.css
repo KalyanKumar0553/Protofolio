@@ -4,7 +4,8 @@ html {
 body {
  width: 100vw;
  margin: 0 auto;
- color: #b9b7c7;
+ color: white;
+ font-family: Poppins,sans-serif;
 }
 .mainContent {
  height: 100vh;
@@ -26,12 +27,17 @@ body {
   display: inline-block;
   float: right;
   width: 100%;
+  color:white;
+  font-weight:600;
 }
-.imgContainer,.sectionContainer {
+.imgContainer,.sectionContainer,.techContainer {
   height: 100vh;
   width:100vw;
   display:table;
   background: whitesmoke;
+}
+.techContainer {
+  height: 90vh;
 }
 .imgContainer {
   background-size: cover;
@@ -50,12 +56,13 @@ body {
   vertical-align:middle;
   text-align:center;
   color: #8c5e7b;
+  padding-bottom: 12%;
 }
 .nameTitle {
   font-family: 'Sofia';
 }
 svg:not(:root) {
-  overflow:visible;
+  overflow: visible;
   z-index: 1000;
 }
 .arrow-down-svg {
@@ -67,8 +74,8 @@ svg:not(:root) {
 }
 .bounce-down {
   position: absolute;
-  bottom: 10vh;
-  left: 17vw;
+  bottom: 13vh;
+  left: 16vw;
   color: #8b0046;
   -webkit-animation: bounce 3s infinite;
   animation:  bounce 3s infinite;;
@@ -98,4 +105,50 @@ svg:not(:root) {
   60% {
     transform: translateY(-15px);
   }
+}
+.sectionContent {
+  padding-top: 37px;
+}
+.center {
+   text-align: center;
+}
+.default-color {
+  color: black;
+  opacity: 0.6;
+}
+.content {
+  font-weight: 300;
+  font-size: 19px;
+}
+.clientImg {
+  width: 100%;
+  padding:11%;
+  height:14rem;
+}
+.clientBG {
+  background: white;
+  float: right;
+  width: 100%;
+  margin: 0px;
+}
+.subjectImg {
+  width: 100%;
+  padding:13%;
+}
+.active {
+  text-decoration: underline;
+}
+.center-text {
+  text-align: center;
+}
+.header-bg {
+  background-color: #8b0046;
+}
+.glenwoodImg {
+  height: 128px;
+  max-width:100%;
+}
+.ctsImg {
+  max-width:100%;
+  height:auto;
 }
